@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+</head>
+<body>
+
+<div class="container">
+  
+  <form class="form-inline" >
+    <div class="form-group">
+      <label for="Ustime">Set United State Time:</label>
+      <input type="UStime" class="form-control" id="Ustime" placeholder="16:25:21" name="UStime">
+      
+    
+        <button type="Submit" class="btn btn-default">Submit</button>
+        
+           </div>
+          
+
+
+
+<br>
+<br>
+
+<h3>United State :<span style="font-size:18mm">
+</span>   &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; London:<span ></span></span>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;India:<span  id="datetime"></span >
+</h3>
+<hr>
+
+</form>
+</div>
+<script>
+var myVar = setInterval(myTimer, 1000);
+function myTimer() {
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+}
+</script>
+</body>
+
+</html>
